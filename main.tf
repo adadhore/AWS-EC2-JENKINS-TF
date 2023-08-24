@@ -5,18 +5,12 @@ resource "aws_security_group" "Test_security_group" {
   description = "security group for Ec2 instance"
 
   ingress {
-    from_port   = 8080
-    to_port     = 8080
+    from_port   = 0
+    to_port     = 65535
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
- ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
 
  # outbound from jenkis server
   egress {
@@ -39,14 +33,5 @@ resource "aws_instance" "TestInstance" {
   security_groups= [var.security_group]
   tags= {
     Name = var.tag_name
-  }
-}
-
-# Create Elastic IP address
-resource "aws_eip" "TestInstance" {
-  vpc      = true
-  instance = aws_instance.TestInstance.id
-tags= {
-    Name = "my_elastic_ip"
   }
 }
