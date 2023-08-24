@@ -6,7 +6,7 @@ To create an automated deployment pipeline using Jenkins, Terraform, and Git to 
 
 What is Jenkins at a high level?
 Jenkins is an open-source automation server that provides a way to automate parts of the software development process, including building, testing, and deploying software applications. It is a continuous integration and continuous delivery (CI/CD) tool that automates the software delivery process by allowing developers to build, test, and deploy code changes in a consistent and repeatable way. Jenkins enables teams to quickly detect and fix errors, streamline the development process, and ultimately deliver higher-quality software faster. It offers an extensive plugin ecosystem that supports integrations with a wide range of tools and technologies, making it a versatile and flexible tool for teams of all sizes and industries.
-
+ 
 What is Terraform at a high level?
 Terraform is an open-source infrastructure as code (IaC) tool used to manage and provision infrastructure resources across various cloud platforms, such as Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure. It allows users to define infrastructure as code using a declarative language, which enables them to manage complex infrastructure deployments with ease. Terraform provides a consistent and repeatable way to create, modify, and destroy infrastructure resources, making it ideal for use in cloud-based environments. Its modular architecture and support for third-party plugins and providers make it a flexible and versatile tool for teams of all sizes and industries. With Terraform, users can automate the entire infrastructure lifecycle, from planning and design to deployment and scaling.
 
