@@ -34,6 +34,4 @@ resource "aws_instance" "TestInstance" {
   tags= {
     Name = var.tag_name
   }
-   ebs_optimized = true
-   monitoring = true
 }
